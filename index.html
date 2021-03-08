@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" media="print" href="print.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+  <header class="header"><h1>Timeline</h1></header>
+  <div class="timeline">
+    <form class="item item-creator">
+      <div class="price">
+        <label>Preço
+          <input name="price" type="number" value="1000" min="0" step="100" inputmode="numeric" pattern="[0-9]*" />€
+        </label>
+      </div>
+      <img class="image"></img>
+      <div class="duration">
+        <label>Duração
+        <select name="duration">
+          <option>20m</option>
+          <option>40m</option>
+          <option selected>1h</option>
+          <option>1h 30m</option>
+          <option>2h</option>
+          <option>2h 30m</option>
+          <option>3h</option>
+          <option>3h 30m</option>
+          <option>4h</option>
+        </select>
+      </div>
+      <div class="treatment">
+        <select name="treatment">
+          <option selected>Planeamento Inicial</option>
+          <option>Cirurgia</option>
+          <option>Provisionalização</option>
+          <option>Preparos + Impressão</option>
+          <option>Adesão</option>
+          <option>Exposição + Impressão</option>
+          <option>Colocação + Restauros</option>
+          <option>Goteira</option>
+          <option>Controlo</option>
+        </select>
+      </div>
+      <div class="steps">
+        <header>Procedimentos</header>
+        <textarea name="procedures"></textarea>
+      </div>
+      <button class="add-item-button" type="submit">Adicionar</button>
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
