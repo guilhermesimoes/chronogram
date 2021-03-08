@@ -1,3 +1,7 @@
+body {
+  color-adjust: exact;
+}
+
 .remove-item-button, .item-creator {
   display: none;
 }
